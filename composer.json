@@ -1,0 +1,27 @@
+{
+    "name": "replum/font-awesome",
+    "description": "Replum web widget framework: Font Awesome integration",
+    "authors": [
+        {
+            "name": "Dennis Birkholz",
+            "email": "dennis@birkholz.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Replum\\FontAwesome\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Replum\\FontAwesome\\": "tests/"
+        }
+    },
+    "require": {
+        "replum/framework": "dev-master",
+        "components/font-awesome": "^4.7"
+    },
+    "require-dev": {
+        "symfony/yaml": "^3.3"
+    }
+}
