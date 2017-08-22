@@ -1,6 +1,6 @@
 {
     "name": "replum/font-awesome",
-    "description": "Replum web widget framework: Font Awesome integration",
+    "description": "Replum: the PHP web widget framework - Font Awesome integration",
     "authors": [
         {
             "name": "Dennis Birkholz",
