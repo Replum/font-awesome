@@ -7,6 +7,7 @@
             "email": "dennis@birkholz.org"
         }
     ],
+    "license": "LGPL-3",
     "autoload": {
         "psr-4": {
             "Replum\\FontAwesome\\": "src/"
