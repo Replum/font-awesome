@@ -25,9 +25,9 @@ function print_icon_method($iconId) {
     /**
      * Create "<?= $iconId ?>" icon
      */
-    public static function <?= $fnName ?>(PageInterface $page) : self
+    public static function <?= $fnName ?>() : self
     {
-        return new self($page, '<?= $iconId ?>');
+        return new self('<?= $iconId ?>');
     }
 
 <?php
@@ -76,10 +76,8 @@ $icons = \Symfony\Component\Yaml\Yaml::parse(\file_get_contents('https://raw.git
         return $this->icon;
     }
 
-    public function __construct(PageInterface $page, string $icon)
+    public function __construct(string $icon)
     {
-        parent::__construct($page);
-
         if (!isset(self::AVAILABLE_ICONS[$icon])) {
             throw new \InvalidArgumentException('Supplied icon "' . $icon . '" does not exist in Font Awesome v4.7.0');
         }
